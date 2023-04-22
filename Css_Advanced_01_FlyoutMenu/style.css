@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+#menu {
+  margin: 50px auto;
+  width: 300px;
+}
+.menu-item {
+  background: #ff6600;
+  border-bottom: 1px solid #ff9600;
+  height: 40px;
+  line-height: 40px;
+  list-style: none;
+  padding: 0 10px;
+}
+.menu-item a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.menu-item:hover {
+  background: #ff9600;
+  cursor: pointer;
+}
+#menu > ul > .menu-item {
+  position: relative;
+}
+#menu > ul > .menu-item > ul {
+  background-color: #ff6600;
+  position: absolute;
+  left: 300px;
+  top: 0;
+  width: 300px;
+  box-sizing: border-box;
+  display: none;
+}
+#menu > ul > .menu-item:hover > ul {
+  display: block;
+}
